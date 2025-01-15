@@ -52,7 +52,7 @@ const HanjaSelectorVOL02 = () => {
   };
 
   const handleDownload = () => {
-    const csvData = selectedHanja.map((hanja) => ({
+    const txtData = selectedHanja.map((hanja) => ({
       발음: hanja.KoreanPronunciation,
       한자: hanja.Hanja,
       획수: hanja.Strokes,
