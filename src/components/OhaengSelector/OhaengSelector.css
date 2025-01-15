@@ -1,0 +1,65 @@
+/* 전체 배경 박스 */
+.ohaeng-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 배경 그림자 */
+  box-sizing: border-box; /* 패딩 포함 크기 계산 */
+}
+
+/* 오행 카드 섹션 */
+.ohaeng-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* 카드 간 간격 */
+  width: 100%;
+}
+
+/* 개별 오행 카드 */
+.ohaeng-card {
+  width: 150px;
+  height: 150px;
+  background-color: #f9f9f9; /* 기본 배경 */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* 기본 텍스트 색상 */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 선택된 카드 스타일 */
+.ohaeng-card.selected {
+  color: white;
+}
+
+.ohaeng-card.mok.selected {
+  background-color: blue;
+}
+
+.ohaeng-card.hwa.selected {
+  background-color: red;
+}
+
+.ohaeng-card.to.selected {
+  background-color: orange;
+}
+
+.ohaeng-card.geum.selected {
+  background-color: #888; /* 진한 회색 */
+}
+
+.ohaeng-card.su.selected {
+  background-color: black;
+}

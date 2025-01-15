@@ -1,0 +1,295 @@
+/* 입력 섹션 컨테이너 스타일 */
+.input-container {
+    display: flex;
+    flex-wrap: wrap; /* 입력 칸이 좁아지면 줄바꿈 */
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* 연한 회색 배경 */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* 최대 너비 고정 */
+    margin: 20px auto; /* 중앙 정렬 */
+    box-sizing: border-box; /* 패딩 포함 너비 계산 */
+}
+
+/* 입력 필드 스타일 */
+.input-container input {
+    height: 40px; /* 높이를 고정 */
+    padding: 0 10px; /* 텍스트와 박스 사이 여백 */
+    margin: 10px 10px 10px 0; /* 상하좌우 간격 */
+    border: 1px solid #ccc; /* 회색 테두리 */
+    border-radius: 5px; /* 둥근 모서리 */
+    font-size: 16px; /* 텍스트 크기 */
+    box-sizing: border-box; /* 패딩 포함 너비 계산 */
+}
+
+/* 검색 버튼 스타일 */
+.input-container button {
+    display: flex; /* 플렉스박스 정렬 */
+    justify-content: center; /* 가로 중앙 */
+    align-items: center; /* 세로 중앙 */
+    background-color: #007bff; /* 파란색 배경 */
+    color: white; /* 흰색 텍스트 */
+    border: none; /* 테두리 없음 */
+    cursor: pointer; /* 마우스 포인터 */
+    transition: background-color 0.3s; /* 호버 시 색상 전환 */
+    height: 40px; /* 높이 고정 */
+    border-radius: 5px; /* 둥근 모서리 */
+    font-size: 16px; /* 텍스트 크기 */
+    font-weight: bold; /* 텍스트 두껍게 */
+    padding: 0 20px; /* 가로 여백 */
+    margin-left: 10px; /* 검색 버튼과 입력 필드 사이 간격 */
+}
+
+/* 검색 버튼 호버 효과 */
+.input-container button:hover {
+    background-color: #0056b3; /* 어두운 파란색 */
+}
+
+/* 원형이정 카드 섹션 컨테이너 */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px; /* 입력 섹션과 동일한 최대 너비 */
+    margin: 20px auto; /* 아래 여백 추가 */
+    gap: 20px; /* 카드 간 간격 */
+}
+
+/* 개별 카드 스타일 */
+.card {
+    width: 150px;
+    height: 150px;
+    background-color: #f9f9f9; /* 카드 배경색 */
+    border: 1px solid #ddd; /* 카드 테두리 */
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+/* 카드 호버 효과 */
+.card:hover {
+    transform: translateY(-5px); /* 위로 살짝 이동 */
+}
+
+/* 카드 텍스트 스타일 */
+.card h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+    color: #007bff; /* 파란색 텍스트 */
+}
+/* 추천 섹션 컨테이너 */
+.recommendation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+
+/* 팝업창 스타일 */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 */
+    width: 80%;
+    max-width: 600px;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* 팝업창의 표 스타일 */
+.popup table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.popup th,
+.popup td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.popup th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+}
+/* 테이블 컨테이너 */
+.recommendation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* 더 넓은 가로 폭 */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* 추천 박스 */
+.recommendation-box {
+    width: 48%; /* 좌우 균등 분할 */
+    max-width: 600px; /* 개별 박스 최대 가로 폭 */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden; /* 초과되는 콘텐츠 숨기기 */
+}
+
+
+/* 테이블 컨테이너 */
+.table-container {
+    max-height: 400px; /* 세로 스크롤 최대 높이 */
+    overflow-y: auto; /* 세로 스크롤 활성화 */
+    overflow-x: hidden; /* 가로 스크롤 숨기기 */
+    width: 100%;
+    margin-top: 10px;
+}
+/* 테이블 스타일일 */
+thead th {
+    position: sticky; /* 스크롤 시 헤더 고정 */
+    top: 0; /* 고정 위치 */
+    background-color: #f4f4f4; /* 고정된 헤더 배경색 */
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* 추천 박스 */
+.recommendation-box {
+    width: 48%; /* 박스 좌우 균등 분할 */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* 테이블을 감싸는 컨테이너에 스크롤 적용 */
+.table-scroll-container {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+/* 테이블 스타일 */
+.recommendation-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 테이블 헤더 고정 */
+.recommendation-box thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #f4f4f4;
+}
+
+.recommendation-box th {
+    background-color: #f4f4f4;
+    padding: 12px 8px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    white-space: nowrap;
+}
+
+.recommendation-box td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.recommendation-box tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
