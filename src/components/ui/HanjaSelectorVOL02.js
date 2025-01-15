@@ -52,7 +52,7 @@ const HanjaSelectorVOL02 = () => {
   };
 
   const handleDownload = () => {
-    const csvData = selectedHanja.map((hanja) => ({
+    const txtData = selectedHanja.map((hanja) => ({
       발음: hanja.KoreanPronunciation,
       한자: hanja.Hanja,
       획수: hanja.Strokes,
@@ -60,11 +60,11 @@ const HanjaSelectorVOL02 = () => {
       자원오행: hanja.Element,
       발음오행: hanja.SoundElement,
     }));
-    const csv = Papa.unparse(csvData);
-    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const txt = Papa.unparse(txtData);
+    const blob = new Blob([txt], { type: "text/plain;charset=utf-8;" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = "선택한한자.csv";
+    link.download = "선택한한자.txt";
     link.click();
   };
 
