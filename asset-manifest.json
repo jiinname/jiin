@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jiin/static/css/main.a9bf14be.css",
+    "main.js": "/jiin/static/js/main.a1120e64.js",
+    "static/js/488.e14a53e0.chunk.js": "/jiin/static/js/488.e14a53e0.chunk.js",
+    "index.html": "/jiin/index.html",
+    "main.a9bf14be.css.map": "/jiin/static/css/main.a9bf14be.css.map",
+    "main.a1120e64.js.map": "/jiin/static/js/main.a1120e64.js.map",
+    "488.e14a53e0.chunk.js.map": "/jiin/static/js/488.e14a53e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9bf14be.css",
+    "static/js/main.a1120e64.js"
+  ]
+}
