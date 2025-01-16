@@ -23,9 +23,9 @@ const HanjaSelectorVOL02 = () => {
     badNumbers.includes(number) ? "흉수" : "길수";
 
   const calculateWonyoung = () => {
-    const won = Number(sungHanjaStrokes) + Number(firstStrokes);
-    const hyeong = Number(sungHanjaStrokes) + Number(secondStrokes);
-    const i = Number(sungHanjaStrokes) + Number(firstStrokes);
+    const won = Number(firstStrokes) + Number(secondStrokes);
+    const hyeong = Number(sungHanjaStrokes) + Number(firstStrokes);
+    const i = Number(sungHanjaStrokes) + Number(secondStrokes);
     const jeong =
       Number(sungHanjaStrokes) + Number(firstStrokes) + Number(secondStrokes);
      
@@ -70,7 +70,7 @@ const HanjaSelectorVOL02 = () => {
 
   const handleSearch = () => {
     setSelectedOhaeng([]); // 부족한 오행 초기화
-    Papa.parse("/firstname-cvs.csv", {
+    Papa.parse(`${process.env.PUBLIC_URL}/firstname-cvs.csv`, {
       download: true,
       header: true,
       complete: (result) => {
@@ -105,7 +105,7 @@ const HanjaSelectorVOL02 = () => {
   const handleRecommendHanja = () => {
     console.log("handleRecommendHanja 실행됨");
   
-    Papa.parse("/Total_name_hanja.csv", {
+    Papa.parse(`${process.env.PUBLIC_URL}/Total_name_hanja.csv`, {
       download: true,
       header: true,
       complete: (result) => {
